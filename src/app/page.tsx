@@ -7,7 +7,7 @@ import Image from "next/image";
 
 export default function HomePage() {
   return (
-    <div className="flex flex-col min-h-screen bg-gradient-to-br from-background to-secondary/30">
+    <div className="flex flex-col min-h-screen bg-gradient-to-br from-background to-secondary">
       <header className="container mx-auto px-4 py-6 flex justify-between items-center">
         <Link href="/" className="flex items-center space-x-2">
           <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="text-primary">
@@ -59,7 +59,7 @@ export default function HomePage() {
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center text-primary mb-12">Why Choose ResumeCraft AI?</h2>
           <div className="grid md:grid-cols-3 gap-8">
-            <Card className="shadow-lg hover:shadow-xl transition-shadow duration-300">
+            <Card className="shadow-lg hover:shadow-xl transition-shadow duration-300 bg-card/80 backdrop-blur-sm">
               <CardHeader className="items-center text-center">
                 <div className="p-3 rounded-full bg-accent/20 text-accent mb-3">
                   <Target className="h-8 w-8" />
@@ -70,7 +70,7 @@ export default function HomePage() {
                 Our advanced AI analyzes job descriptions and your resume to find the perfect match, suggesting impactful edits.
               </CardContent>
             </Card>
-            <Card className="shadow-lg hover:shadow-xl transition-shadow duration-300">
+            <Card className="shadow-lg hover:shadow-xl transition-shadow duration-300 bg-card/80 backdrop-blur-sm">
               <CardHeader className="items-center text-center">
                 <div className="p-3 rounded-full bg-accent/20 text-accent mb-3">
                   <Rocket className="h-8 w-8" />
@@ -81,7 +81,7 @@ export default function HomePage() {
                 Craft resumes that sail through Applicant Tracking Systems with optimized keywords and formatting.
               </CardContent>
             </Card>
-            <Card className="shadow-lg hover:shadow-xl transition-shadow duration-300">
+            <Card className="shadow-lg hover:shadow-xl transition-shadow duration-300 bg-card/80 backdrop-blur-sm">
               <CardHeader className="items-center text-center">
                 <div className="p-3 rounded-full bg-accent/20 text-accent mb-3">
                   <CheckCircle className="h-8 w-8" />
