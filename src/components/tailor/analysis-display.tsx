@@ -50,7 +50,7 @@ export function AnalysisDisplay({ analysis }: AnalysisDisplayProps) {
             Suggested Improvements
           </h3>
           <div className="bg-muted/50 p-4 rounded-lg border border-border shadow-inner">
-            <p className="text-sm text-foreground whitespace-pre-wrap leading-relaxed">
+            <p className="text-sm text-foreground whitespace-pre-wrap leading-loose">
               {analysis.suggestedImprovements}
             </p>
           </div>
