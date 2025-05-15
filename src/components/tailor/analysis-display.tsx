@@ -16,7 +16,7 @@ export function AnalysisDisplay({ analysis }: AnalysisDisplayProps) {
           <Lightbulb className="mr-2 h-6 w-6" />
           AI Analysis & Suggestions
         </CardTitle>
-        <CardDescription>
+        <CardDescription className="text-md text-muted-foreground pt-1">
           Here&apos;s how your resume aligns with the job description and areas for improvement.
         </CardDescription>
       </CardHeader>
@@ -29,9 +29,9 @@ export function AnalysisDisplay({ analysis }: AnalysisDisplayProps) {
           {analysis.matchingSkills.length > 0 ? (
             <div className="flex flex-wrap gap-2">
               {analysis.matchingSkills.map((skill, index) => (
-                <Badge 
-                  key={index} 
-                  variant="default" 
+                <Badge
+                  key={index}
+                  variant="default"
                   className="bg-accent text-accent-foreground hover:bg-accent/90 text-sm px-3 py-1 shadow-sm"
                 >
                   {skill}
@@ -44,13 +44,13 @@ export function AnalysisDisplay({ analysis }: AnalysisDisplayProps) {
             </p>
           )}
         </div>
-        
+
         <div className="border-t pt-8">
-          <h3 className="text-xl font-semibold mb-4 text-foreground"> {/* Increased mb from 3 to 4 */}
+          <h3 className="text-xl font-semibold mb-4 text-foreground">
             Suggested Improvements
           </h3>
-          <div className="bg-muted/50 p-6 rounded-lg border border-border shadow-inner"> {/* Increased p from 4 to 6 */}
-            <p className="text-base text-foreground whitespace-pre-wrap leading-loose"> {/* Changed text-sm to text-base */}
+          <div className="bg-muted p-8 rounded-lg border border-primary/40 shadow-inner">
+            <p className="text-base text-foreground whitespace-pre-wrap leading-loose">
               {analysis.suggestedImprovements}
             </p>
           </div>
