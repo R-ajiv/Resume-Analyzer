@@ -46,11 +46,11 @@ export function AnalysisDisplay({ analysis }: AnalysisDisplayProps) {
         </div>
         
         <div className="border-t pt-8">
-          <h3 className="text-xl font-semibold mb-3 text-foreground">
+          <h3 className="text-xl font-semibold mb-4 text-foreground"> {/* Increased mb from 3 to 4 */}
             Suggested Improvements
           </h3>
-          <div className="bg-muted/50 p-4 rounded-lg border border-border shadow-inner">
-            <p className="text-sm text-foreground whitespace-pre-wrap leading-loose">
+          <div className="bg-muted/50 p-6 rounded-lg border border-border shadow-inner"> {/* Increased p from 4 to 6 */}
+            <p className="text-base text-foreground whitespace-pre-wrap leading-loose"> {/* Changed text-sm to text-base */}
               {analysis.suggestedImprovements}
             </p>
           </div>
