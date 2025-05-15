@@ -2,7 +2,8 @@
 "use client";
 
 import { Navbar } from '@/components/layout/navbar';
-import { AuthProvider, useAuth } from '@/contexts/auth-context';
+import { AuthProvider } from '@/contexts/auth-context';
+import { useAuth } from '@/hooks/use-auth'; // Changed import path
 import { useRouter, usePathname } from 'next/navigation';
 import type React from 'react';
 import { useEffect } from 'react';
