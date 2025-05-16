@@ -1,4 +1,4 @@
-# 🤖 AI-Powered Resume Tailor
+# 🤖 AI-Powered Resume Analyzer
 
 > An AI tool that analyzes your resume against a job description and provides actionable improvement suggestions.
 
