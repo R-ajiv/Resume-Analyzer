@@ -49,7 +49,7 @@ export default function HomePage() {
             width={800}
             height={450}
             className="rounded-lg shadow-2xl border-4 border-background"
-            data-ai-hint="professional resume"
+            data-ai-hint="career success"
             priority
           />
         </div>
