@@ -9,6 +9,10 @@ interface AnalysisDisplayProps {
 }
 
 export function AnalysisDisplay({ analysis }: AnalysisDisplayProps) {
+  const improvementPoints = analysis.suggestedImprovements
+    .split('\n')
+    .filter(point => point.trim() !== '');
+
   return (
     <Card className="w-full shadow-lg">
       <CardHeader>
@@ -50,9 +54,20 @@ export function AnalysisDisplay({ analysis }: AnalysisDisplayProps) {
             Suggested Improvements
           </h3>
           <div className="bg-muted p-8 rounded-lg border border-primary/40 shadow-inner">
-            <p className="text-base text-foreground whitespace-pre-wrap leading-loose">
-              {analysis.suggestedImprovements}
-            </p>
+            {improvementPoints.length > 0 ? (
+              improvementPoints.map((point, index) => (
+                <p
+                  key={index}
+                  className="text-base text-foreground whitespace-pre-wrap leading-loose mb-4" // Added mb-4 for spacing between points
+                >
+                  {point}
+                </p>
+              ))
+            ) : (
+              <p className="text-base text-foreground whitespace-pre-wrap leading-loose">
+                No specific improvements suggested by the AI.
+              </p>
+            )}
           </div>
         </div>
       </CardContent>
