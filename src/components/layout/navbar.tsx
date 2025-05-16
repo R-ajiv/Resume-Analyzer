@@ -16,7 +16,7 @@ export function Navbar() {
             ResumeCraft AI
           </span>
         </Link>
-        <nav className="flex flex-1 items-center space-x-3">
+        <nav className="flex items-center space-x-3"> {/* Removed flex-1 */}
           <Button
             variant="ghost"
             asChild
@@ -34,7 +34,7 @@ export function Navbar() {
           </Button>
           */}
         </nav>
-        <div className="flex items-center space-x-3">
+        <div className="ml-auto flex items-center space-x-3"> {/* Added ml-auto */}
           <UserNav />
         </div>
       </div>
