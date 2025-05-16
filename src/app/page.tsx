@@ -44,11 +44,11 @@ export default function HomePage() {
         </Button>
         <div className="relative mt-12 w-full max-w-3xl">
            <Image
-            src="https://placehold.co/800x450.png"
-            alt="ResumeCraft AI interface preview"
+            src="https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg"
+            alt="ResumeCraft AI interface preview - professionals collaborating"
             width={800}
             height={450}
-            className="rounded-lg shadow-2xl border-4 border-background"
+            className="rounded-lg shadow-2xl border-4 border-background object-cover"
             data-ai-hint="career success"
             priority
           />

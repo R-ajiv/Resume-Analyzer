@@ -19,6 +19,12 @@ const nextConfig: NextConfig = {
       },
       {
         protocol: 'https',
+        hostname: 'images.pexels.com', // Added this specific subdomain
+        port: '',
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
         hostname: 'placehold.co',
         port: '',
         pathname: '/**',
