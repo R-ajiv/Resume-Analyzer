@@ -43,7 +43,7 @@ export default function HomePage() {
           </Link>
         </Button>
         <div className="relative mt-12 w-full max-w-3xl">
-           <Image 
+           <Image
             src="https://placehold.co/800x450.png"
             alt="ResumeCraft AI interface preview"
             width={800}
